@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=doctolib'
+      - 'POSTGRES_PASSWORD=doctolib'
+      - 'POSTGRES_USER=doctolib'
+    ports:
+      - '5432:5432'
